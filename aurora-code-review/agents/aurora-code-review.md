@@ -170,6 +170,31 @@ assets/
 - Use vuelidate-error-extractor for error messages
 - Messages go in `assets/js/validations/messages.js`
 
+#### Variáveis em Componentes Vue
+- Ao revisar código Vue e encontrar uma variável sendo usada no template ou métodos:
+  - Primeiro verifique se está declarada em `data()`
+  - Se não encontrar em `data()`, verifique em `props`
+  - Variáveis podem vir de props passados pelo componente pai
+- Não reporte erro de "variável não declarada" sem verificar ambos `data()` e `props`
+
+#### Enums em JavaScript
+- Enums devem ser definidos usando `Object.freeze()` para imutabilidade
+- Localização: `assets/modules/{module}/js/enums.js`
+- Padrão de nomenclatura:
+  - Nome da const: camelCase em **inglês**
+  - Propriedades internas: **português** (seguem nomenclatura do banco de dados)
+- Valores numéricos podem começar em qualquer número (não necessariamente 0)
+- Exemplo de estrutura correta:
+```javascript
+export const toolTabs = Object.freeze({
+  ferramenta: 0,
+  equipe: 1,
+  problema: 2,
+});
+```
+- Sempre exportar os enums para uso em outros arquivos
+- Usar enums ao invés de números mágicos no código (ex: usar `toolTabs.equipe` ao invés de `1`)
+
 ### Padrões de Commit (Conventional Commits)
 
 Format: `<type>(<scope>): <description>`
