@@ -1,71 +1,71 @@
-# Aurora Portal Claude Code Plugins
+# Aurora Portal - Plugins para Claude Code
 
-A collection of Claude Code plugins tailored for Aurora Portal development (PHP/Laravel + Vue.js).
+Uma coleção de plugins do Claude Code desenvolvidos para o desenvolvimento do Aurora Portal (PHP/Symfony + Vue.js).
 
 ## Plugins
 
 ### aurora-code-review
 
-A comprehensive code review agent that analyzes PHP/Laravel and Vue.js code following Aurora Portal standards and best practices.
+Um agente abrangente de revisão de código que analisa código PHP/Symfony e Vue.js seguindo os padrões e boas práticas do Aurora Portal.
 
-**Features:**
+**Funcionalidades:**
 
-- Validates naming conventions (Portuguese for backend, English for frontend variables/methods)
-- Checks folder structure compliance for Controllers, Services, DTOs, Validators, etc.
-- Enforces REST patterns for routes and actions
-- Reviews component organization in Vue.js
-- Validates button colors and naming conventions
-- Checks commit message format (Conventional Commits)
-- Provides severity-based feedback (Critical, Warning, Suggestion)
-- Generates summary with overall assessment
+- Valida convenções de nomenclatura (português para backend, inglês para variáveis/métodos do frontend)
+- Verifica conformidade da estrutura de pastas para Controllers, Services, DTOs, Validators, etc.
+- Aplica padrões REST para rotas e ações
+- Revisa organização de componentes Vue.js
+- Valida cores e nomenclatura de botões
+- Verifica formato de mensagens de commit (Conventional Commits)
+- Fornece feedback baseado em severidade (Crítico, Alerta, Sugestão)
+- Gera resumo com avaliação geral
 
-**Standards Covered:**
+**Padrões Cobertos:**
 
-- PSR standards (PSR-1, PSR-4, PSR-12)
-- Aurora Portal folder structure
-- Controller/Service separation of concerns
-- DTO patterns and transformers
-- Vue.js component organization
-- Route naming conventions
-- Button styling standards
-- Testing best practices
+- Padrões PSR (PSR-1, PSR-4, PSR-12)
+- Estrutura de pastas do Aurora Portal
+- Separação de responsabilidades Controller/Service
+- Padrões de DTOs e transformers
+- Organização de componentes Vue.js
+- Convenções de nomenclatura de rotas
+- Padrões de estilização de botões
+- Boas práticas de testes
 
-## Installation
+## Instalação
 
-Add the marketplace and install the plugin:
+Adicione o marketplace e instale o plugin:
 
 ```
 /plugin marketplace add aurora-portal/claude-code
 ```
 
-Install the code review plugin:
+Instale o plugin de revisão de código:
 ```
 /plugin install aurora-code-review@aurora-portal
 ```
 
-## Usage
+## Uso
 
-### Code Review
+### Revisão de Código
 
-After making changes or before committing, ask Claude Code to review:
-
-```
-> Review my recent changes using the aurora-code-review agent
-```
-
-Or review specific files:
+Após fazer alterações ou antes de commitar, peça ao Claude Code para revisar:
 
 ```
-> Use aurora-code-review to analyze src/Modules/Compras/Controller/PedidosController.php
+> Revise minhas alterações recentes usando o agente aurora-code-review
 ```
 
-## Documentation
+Ou revise arquivos específicos:
 
-The code review rules are based on the Aurora Portal documentation found in the `docs/` folder, including:
+```
+> Use aurora-code-review para analisar src/Modules/Compras/Controller/PedidosController.php
+```
 
-- [Padroes](docs/padroes.md) - Coding standards and conventions
-- [Componentes](docs/componentes.md) - Vue.js component guidelines
-- [Services PHP](docs/servicesphp.md) - Service layer patterns
-- [DTOs](docs/dto.md) - Data Transfer Objects guidelines
-- [Validacao](docs/validacao.md) - Validation patterns
-- [Testes](docs/testes.md) - Testing standards
+## Documentação
+
+As regras de revisão de código são baseadas na documentação do Aurora Portal encontrada na pasta `docs/`, incluindo:
+
+- [Padrões](docs/padroes.md) - Padrões e convenções de codificação
+- [Componentes](docs/componentes.md) - Diretrizes de componentes Vue.js
+- [Services PHP](docs/servicesphp.md) - Padrões da camada de serviços
+- [DTOs](docs/dto.md) - Diretrizes de Data Transfer Objects
+- [Validação](docs/validacao.md) - Padrões de validação
+- [Testes](docs/testes.md) - Padrões de testes
