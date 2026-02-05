@@ -1,0 +1,23 @@
+{
+  "name": "aurora-portal",
+  "owner": {
+    "name": "Aurora Portal Team",
+    "email": "joao-zonta@auroracoop.com.br"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for Aurora Portal development (PHP/Laravel + Vue.js)"
+  },
+  "plugins": [
+    {
+      "name": "aurora-code-review",
+      "source": "./aurora-code-review",
+      "description": "Performs comprehensive code review following Aurora Portal standards for PHP/Laravel and Vue.js",
+      "version": "1.0.0",
+      "author": {
+        "name": "Aurora Portal Team",
+        "email": "joao-zonta@auroracoop.com.br"
+      },
+      "category": "code-quality"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "aurora-code-review",
+    "version": "1.0.0",
+    "description": "Agent that performs code review following Aurora Portal standards and best practices for PHP/Laravel and Vue.js code",
+    "author": {
+        "name": "Aurora Portal Team",
+        "email": "joao-zonta@auroracoop.com.br"
+    }
+}
